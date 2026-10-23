@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --alpine-navy: #0b243b;
+  --alpine-teal: #114463;
+  --glacier-blue: #006ebf;
+  --sherpa-gold: #d4942a;
+  --snow-bg: #f5f9fd;
+  --mist-border: #d5e5f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--snow-bg);
+  color: #16263b;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Rich HTML content inside package overview, inclusions, exclusions, blog posts */
+.prose-himalaya p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.prose-himalaya h2,
+.prose-himalaya h3,
+.prose-himalaya h4 {
+  color: #0b243b;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-himalaya ul,
+.prose-himalaya ol {
+  margin: 0.75rem 0 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prose-himalaya ul li {
+  list-style-type: disc;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.prose-himalaya ol li {
+  list-style-type: decimal;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.prose-himalaya a {
+  color: #006ebf;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-hero-zoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
