@@ -1,0 +1,28 @@
+name: Deploy to Namecheap (trekking.codeconceptconsulting.com)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Trigger Namecheap cPanel Git Deployment & Build
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST || '198.54.114.248' }}
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_PASS: ${{ secrets.CPANEL_PASS }}
+          SUBDOMAIN: "trekking.codeconceptconsulting.com"
+        run: |
+          if [ -z "$CPANEL_USER" ] || [ -z "$CPANEL_PASS" ]; then
+            echo "Skipping remote cPanel trigger: CPANEL_USER / CPANEL_PASS secrets not yet configured."
+            exit 0
+          fi
+          chmod +x ./scripts/deploy-cpanel.sh
+          ./scripts/deploy-cpanel.sh
