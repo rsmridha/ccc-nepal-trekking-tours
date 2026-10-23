@@ -69,11 +69,11 @@ export async function POST(req: NextRequest) {
       tabCategory: body.tabCategory || "bestseller",
       heroImage:
         body.heroImage ||
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
+        "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg",
       gallery: [
         body.heroImage ||
-          "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
-        "https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?w=1200&q=80",
+          "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg",
+        "/images/unsplash/photo-1518002054494-3a6f94352e9d-1200.jpg",
       ],
       overviewHtml: `<p>${body.overviewText || ""}</p>`,
       overviewText: body.overviewText || "Experience an authentic Himalayan adventure led by veteran Expert Representatives.",

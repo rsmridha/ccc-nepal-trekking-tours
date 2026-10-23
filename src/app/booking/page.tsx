@@ -18,7 +18,7 @@ export default async function BookingPage({
       {/* Hero Banner */}
       <div className="relative bg-[#0b243b] text-white py-16 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80"
+          src="/images/unsplash/photo-1544735716-392fe2489ffa-1600.jpg"
           alt="Reserve Your Spot"
           className="absolute inset-0 w-full h-full object-cover opacity-35"
         />

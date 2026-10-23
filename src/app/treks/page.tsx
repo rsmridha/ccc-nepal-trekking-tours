@@ -18,7 +18,7 @@ export default async function TreksPage({
       {/* Hero Banner */}
       <div className="relative bg-[#0b243b] text-white py-20 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80"
+          src="/images/unsplash/photo-1544735716-392fe2489ffa-1600.jpg"
           alt="Himalayan Treks & Tours"
           className="absolute inset-0 w-full h-full object-cover opacity-35"
         />

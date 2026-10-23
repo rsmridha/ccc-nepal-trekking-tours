@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
       readTime: body.readTime || "6 min read",
       image:
         body.image ||
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1080&q=80",
+        "/images/unsplash/photo-1544735716-392fe2489ffa-1080.jpg",
       excerpt: body.excerpt || "",
       contentHtml: body.contentHtml || `<p>${body.excerpt || ""}</p>`,
     };

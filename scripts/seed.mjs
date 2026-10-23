@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const API_BASE = "https://webapp.nepaltrekkingtours.com/api";
-const IMAGE_BASE = "https://webapp.nepaltrekkingtours.com/images/upload";
+const IMAGE_BASE = "/images/misc/upload";
 
 function resolveImage(folder, filename, fallback) {
   if (!filename) return fallback;
@@ -132,11 +132,11 @@ async function main() {
           ];
 
       const gallery = Array.isArray(pkg.sliders) && pkg.sliders.length > 0
-        ? pkg.sliders.map((s) => resolveImage("package/slider", s.imagename, "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80"))
+        ? pkg.sliders.map((s) => resolveImage("package/slider", s.imagename, "/images/unsplash/photo-1544735716-392fe2489ffa-1600.jpg"))
         : [
-            resolveImage("package", pkg.imagename, "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80"),
-            "https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?w=1200&q=80",
-            "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+            resolveImage("package", pkg.imagename, "/images/unsplash/photo-1544735716-392fe2489ffa-1600.jpg"),
+            "/images/unsplash/photo-1518002054494-3a6f94352e9d-1200.jpg",
+            "/images/unsplash/photo-1464822759023-fed622ff2c3b-1200.jpg",
           ];
 
       const faqs = Array.isArray(pkg.faqs) && pkg.faqs.length > 0
@@ -186,7 +186,7 @@ async function main() {
         groupSize: "2 – 12 Guests (Private or Small Group)",
         featured: idx < 8,
         tabCategory: isPeak ? "peak" : isLuxury ? "luxury" : pkg.slug.includes("experience") || pkg.slug.includes("poonhill") ? "beginner" : "bestseller",
-        heroImage: resolveImage("package", pkg.imagename, "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80"),
+        heroImage: resolveImage("package", pkg.imagename, "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg"),
         gallery,
         overviewHtml: pkg.description || "",
         overviewText: stripHtml(pkg.description).slice(0, 1200),
@@ -215,7 +215,7 @@ async function main() {
       title: "Deluxe CCC Nepal Trekking Tours",
       slug: "deluxe-nepal-trekking-tours",
       subtitle: "Signature comfort treks with handpicked mountain lodges, private transfers, and veteran Sherpa guides.",
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/destination/deluxe-nepal-trekking-tours.jpg",
+      image: "/images/upload/destination/deluxe-nepal-trekking-tours.jpg",
       region: "Nepal",
       tripCount: packages.filter((p) => p.destinationSlug === "deluxe-nepal-trekking-tours").length,
     },
@@ -224,7 +224,7 @@ async function main() {
       title: "Luxury CCC Nepal Trekking Tours",
       slug: "luxury-nepal-trekking-tours",
       subtitle: "5-star heritage stays, Yeti Mountain Homes, gourmet dining, and scenic helicopter returns.",
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/destination/luxury-nepal-trekking-tours.jpg",
+      image: "/images/upload/destination/luxury-nepal-trekking-tours.jpg",
       region: "Nepal",
       tripCount: packages.filter((p) => p.destinationSlug === "luxury-nepal-trekking-tours").length,
     },
@@ -233,7 +233,7 @@ async function main() {
       title: "Peak Climbing in Nepal",
       slug: "peak-climbing-in-nepal",
       subtitle: "NMA-certified Himalayan summit expeditions led by IFMGA & Everest-summiteer Sherpa climbing guides.",
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/destination/home/img_1653.JPG",
+      image: "/images/upload/destination/home/img_1653.JPG",
       region: "Himalayas",
       tripCount: packages.filter((p) => p.destinationSlug === "peak-climbing-in-nepal").length,
     },
@@ -242,7 +242,7 @@ async function main() {
       title: "Multi-Country Himalayan Tours",
       slug: "multi-country-tour",
       subtitle: "Cross-border cultural odysseys across Nepal, Bhutan (Land of the Thunder Dragon), and Tibet.",
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/destination/img_1831jpg.jpeg",
+      image: "/images/upload/destination/img_1831jpg.jpeg",
       region: "Nepal · Tibet · Bhutan",
       tripCount: packages.filter((p) => p.destinationSlug === "multi-country-tour").length,
     },
@@ -254,7 +254,7 @@ async function main() {
       title: "Deluxe Trekking in Nepal",
       slug: "deluxe-trekking-in-nepal",
       tripCount: 19,
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/activity/home/img_1649.JPG",
+      image: "/images/upload/activity/home/img_1649.JPG",
       description: "Classic Himalayan trails upgraded with attached-bathroom lodges, hot showers, and veteran Sherpa guides.",
     },
     {
@@ -262,7 +262,7 @@ async function main() {
       title: "Deluxe Tour in Nepal",
       slug: "deluxe-tour-in-nepal",
       tripCount: 4,
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/activity/home/img_1929.jpeg",
+      image: "/images/upload/activity/home/img_1929.jpeg",
       description: "Private cultural heritage, wildlife safari, and lakeside retreats in Kathmandu, Pokhara, and Chitwan.",
     },
     {
@@ -270,7 +270,7 @@ async function main() {
       title: "Deluxe Peak Climbing in Nepal",
       slug: "deluxe-peak-climbing-in-nepal",
       tripCount: 7,
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/activity/home/img_2374.JPG",
+      image: "/images/upload/activity/home/img_2374.JPG",
       description: "Conquer 6,000m+ Himalayan trekking peaks including Island Peak, Mera Peak, and Lobuche East.",
     },
     {
@@ -278,7 +278,7 @@ async function main() {
       title: "Deluxe Adventure Tour in Nepal",
       slug: "deluxe-adventure-tour-in-nepal",
       tripCount: 3,
-      image: "https://webapp.nepaltrekkingtours.com/images/upload/activity/home/4ec1887a-2e70-4c66-a012-c3f4119095b5.JPG",
+      image: "/images/upload/activity/home/4ec1887a-2e70-4c66-a012-c3f4119095b5.JPG",
       description: "Mountain biking, helicopter expeditions, white-water rafting, and multi-sport Himalayan thrills.",
     },
   ];
@@ -295,7 +295,7 @@ async function main() {
     author: "Expert Representative",
     category: b.title.toLowerCase().includes("peak") ? "Peak Climbing" : b.title.toLowerCase().includes("luxury") ? "Luxury Trekking" : "Travel Guide",
     readTime: "7 min read",
-    image: resolveImage("blog", b.imagename, "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1080&q=80"),
+    image: resolveImage("blog", b.imagename, "/images/unsplash/photo-1544735716-392fe2489ffa-1080.jpg"),
     excerpt: stripHtml(b.excerpt || b.description).slice(0, 220) + "...",
     contentHtml: b.description || `<p>${stripHtml(b.excerpt)}</p>`,
   }));
@@ -334,7 +334,7 @@ async function main() {
       role: "Founder & Managing Director / Lead Expedition Guide",
       experience: "27+ Years in the Himalayas",
       bio: "Born in the Solukhumbu (Everest) region, our Expert Representative has led over 300 deluxe and luxury treks across Nepal, Tibet, and Bhutan since 1999.",
-      image: "https://nepaltrekkingtours.com/images/pasang.png",
+      image: "/images/team/expert-representative.png",
       certifications: ["Government Licensed Trekking & Mountaineering Guide", "Wilderness First Responder (WFR)", "STEAN Founding Member"],
     },
     {
@@ -343,7 +343,7 @@ async function main() {
       role: "Senior Trekking & Peak Climbing Guide",
       experience: "18+ Years Experience",
       bio: "Summit specialist for Island Peak, Mera Peak, and Lobuche East, known for his deep cultural stories, warmth, and impeccable high-altitude safety record.",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80",
+      image: "/images/unsplash/photo-1534528741775-53994a69daeb-600.jpg",
       certifications: ["NMA High Altitude Climbing Guide", "High Altitude First Aid Certified"],
     },
     {
@@ -352,7 +352,7 @@ async function main() {
       role: "Head of Operations & Guest Relations (Kathmandu)",
       experience: "16+ Years Experience",
       bio: "Oversees all airport welcomes, domestic flight logistics, luxury hotel partnerships, and 24/7 satellite on-trip support.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+      image: "/images/unsplash/photo-1507003211169-0a1dd7228f2d-600.jpg",
       certifications: ["Tourism Management Degree", "TAAN Coordinator"],
     },
     {
@@ -361,7 +361,7 @@ async function main() {
       role: "Senior Sherpa Guide & Logistics Leader",
       experience: "14+ Years Experience",
       bio: "Expert on Annapurna, Manaslu Circuit, and Upper Mustang trails with a passion for sustainable Himalayan hospitality.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80",
+      image: "/images/unsplash/photo-1500648767791-00dcc994a43e-600.jpg",
       certifications: ["KEEP Eco-Trekking Certified", "Government Licensed Guide"],
     },
   ];

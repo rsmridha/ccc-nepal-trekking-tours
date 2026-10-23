@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
       subtitle: body.subtitle || "Explore iconic Himalayan trails and heritage valleys",
       image:
         body.image ||
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1080&q=80",
+        "/images/unsplash/photo-1544735716-392fe2489ffa-1080.jpg",
       region: body.region || body.title,
       tripCount: Number(body.tripCount) || 8,
     };

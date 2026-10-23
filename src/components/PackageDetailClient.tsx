@@ -887,7 +887,7 @@ export default function PackageDetailClient({
               <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <img
-                    src="https://nepaltrekkingtours.com/images/pasang.png"
+                    src="/images/team/expert-representative.png"
                     alt="Expert Representative"
                     className="w-12 h-12 rounded-full object-cover border-2 border-amber-400"
                   />

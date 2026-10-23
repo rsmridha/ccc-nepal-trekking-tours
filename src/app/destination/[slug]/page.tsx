@@ -26,7 +26,7 @@ export default async function DestinationPage({
     "Handpicked Himalayan adventures led by experienced local Expert Representatives.";
   const bannerImg =
     dest?.image ||
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80";
+    "/images/unsplash/photo-1544735716-392fe2489ffa-1600.jpg";
 
   return (
     <div>

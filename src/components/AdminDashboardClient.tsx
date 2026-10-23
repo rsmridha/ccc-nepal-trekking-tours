@@ -123,7 +123,7 @@ export default function AdminDashboardClient({
   const [newPrice, setNewPrice] = useState(1899);
   const [newLuxuryPrice, setNewLuxuryPrice] = useState(2699);
   const [newHeroImage, setNewHeroImage] = useState(
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80"
+    "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg"
   );
   const [newOverview, setNewOverview] = useState("");
 
@@ -132,7 +132,7 @@ export default function AdminDashboardClient({
   const [blogCategory, setBlogCategory] = useState("Travel Guide");
   const [blogReadTime, setBlogReadTime] = useState("7 min read");
   const [blogImage, setBlogImage] = useState(
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1080&q=80"
+    "/images/unsplash/photo-1544735716-392fe2489ffa-1080.jpg"
   );
   const [blogExcerpt, setBlogExcerpt] = useState("");
   const [blogContent, setBlogContent] = useState("");
@@ -143,7 +143,7 @@ export default function AdminDashboardClient({
   const [destSubtitle, setDestSubtitle] = useState("");
   const [destTripCount, setDestTripCount] = useState(8);
   const [destImage, setDestImage] = useState(
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1080&q=80"
+    "/images/unsplash/photo-1544735716-392fe2489ffa-1080.jpg"
   );
 
   // New FAQ Form State
@@ -173,6 +173,22 @@ export default function AdminDashboardClient({
     await fetch("/api/auth/logout", { method: "POST" });
     router.push("/admin/login");
     router.refresh();
+  };
+
+  const handleUploadImageFile = async (
+    file: File | undefined,
+    folder: string,
+    onDone: (appPath: string) => void
+  ) => {
+    if (!file) return;
+    const fd = new FormData();
+    fd.append("file", file);
+    fd.append("folder", folder);
+    const res = await fetch("/api/upload", { method: "POST", body: fd });
+    const data = await res.json();
+    if (data.path) {
+      onDone(data.path);
+    }
   };
 
   const refreshEmails = async () => {
@@ -1692,14 +1708,31 @@ export default function AdminDashboardClient({
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image URL
+                  Cover Image (Application Path or Upload File)
                 </label>
-                <input
-                  type="text"
-                  value={destImage}
-                  onChange={(e) => setDestImage(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={destImage}
+                    onChange={(e) => setDestImage(e.target.value)}
+                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
+                  />
+                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
+                    Upload Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) =>
+                        handleUploadImageFile(
+                          e.target.files?.[0],
+                          "destination",
+                          (p) => setDestImage(p)
+                        )
+                      }
+                    />
+                  </label>
+                </div>
               </div>
               <button
                 type="submit"
@@ -1786,16 +1819,33 @@ export default function AdminDashboardClient({
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Image URL
+                  Image (Application Path or Upload File)
                 </label>
-                <input
-                  type="text"
-                  value={editingDest.image}
-                  onChange={(e) =>
-                    setEditingDest({ ...editingDest, image: e.target.value })
-                  }
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={editingDest.image}
+                    onChange={(e) =>
+                      setEditingDest({ ...editingDest, image: e.target.value })
+                    }
+                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
+                  />
+                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
+                    Upload Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) =>
+                        handleUploadImageFile(
+                          e.target.files?.[0],
+                          "destination",
+                          (p) => setEditingDest({ ...editingDest, image: p })
+                        )
+                      }
+                    />
+                  </label>
+                </div>
               </div>
               <button
                 type="submit"
@@ -2155,14 +2205,31 @@ export default function AdminDashboardClient({
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Hero Image URL
+                  Hero Image (Application Path or Upload File)
                 </label>
-                <input
-                  type="text"
-                  value={newHeroImage}
-                  onChange={(e) => setNewHeroImage(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={newHeroImage}
+                    onChange={(e) => setNewHeroImage(e.target.value)}
+                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
+                  />
+                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
+                    Upload Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) =>
+                        handleUploadImageFile(
+                          e.target.files?.[0],
+                          "package",
+                          (p) => setNewHeroImage(p)
+                        )
+                      }
+                    />
+                  </label>
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
@@ -2331,14 +2398,31 @@ export default function AdminDashboardClient({
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image URL
+                  Cover Image (Application Path or Upload File)
                 </label>
-                <input
-                  type="text"
-                  value={blogImage}
-                  onChange={(e) => setBlogImage(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={blogImage}
+                    onChange={(e) => setBlogImage(e.target.value)}
+                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
+                  />
+                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
+                    Upload Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) =>
+                        handleUploadImageFile(
+                          e.target.files?.[0],
+                          "blog",
+                          (p) => setBlogImage(p)
+                        )
+                      }
+                    />
+                  </label>
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
@@ -2439,16 +2523,33 @@ export default function AdminDashboardClient({
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image URL
+                  Cover Image (Application Path or Upload File)
                 </label>
-                <input
-                  type="text"
-                  value={editingBlog.image}
-                  onChange={(e) =>
-                    setEditingBlog({ ...editingBlog, image: e.target.value })
-                  }
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={editingBlog.image}
+                    onChange={(e) =>
+                      setEditingBlog({ ...editingBlog, image: e.target.value })
+                    }
+                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
+                  />
+                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
+                    Upload Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) =>
+                        handleUploadImageFile(
+                          e.target.files?.[0],
+                          "blog",
+                          (p) => setEditingBlog({ ...editingBlog, image: p })
+                        )
+                      }
+                    />
+                  </label>
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">

@@ -74,7 +74,7 @@ export default async function HomePage() {
       <section className="relative min-h-[600px] lg:min-h-[650px] flex items-center justify-center overflow-hidden bg-[#0b243b] py-24">
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
           <img
-            src="https://webapp.nepaltrekkingtours.com/images/upload/homeslider/deluxe-everest-base-camp-trek.jpg"
+            src="/images/upload/homeslider/deluxe-everest-base-camp-trek.jpg"
             alt="Experience the Himalayas with Expert Representative"
             className="w-full h-full object-cover animate-hero-zoom"
           />
