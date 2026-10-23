@@ -2,6 +2,35 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+function listLocalImages(dir: string, baseRel = "/images"): string[] {
+  const results: string[] = [];
+  if (!fs.existsSync(dir)) return results;
+
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const fullPath = path.join(dir, entry.name);
+    const relPath = `${baseRel}/${entry.name}`;
+    if (entry.isDirectory()) {
+      results.push(...listLocalImages(fullPath, relPath));
+    } else if (/\.(jpg|jpeg|png|webp|gif|svg|avif)$/i.test(entry.name)) {
+      results.push(relPath);
+    }
+  }
+  return results;
+}
+
+export async function GET() {
+  try {
+    const imagesDir = path.join(process.cwd(), "public", "images");
+    const images = listLocalImages(imagesDir, "/images");
+    return NextResponse.json({ images });
+  } catch (err) {
+    return NextResponse.json(
+      { error: "Failed to list application images", details: String(err) },
+      { status: 500 }
+    );
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData();
@@ -36,6 +65,8 @@ export async function POST(req: NextRequest) {
       success: true,
       path: localAppPath,
       url: localAppPath,
+      fileName,
+      size: buffer.byteLength,
     });
   } catch (err) {
     return NextResponse.json(

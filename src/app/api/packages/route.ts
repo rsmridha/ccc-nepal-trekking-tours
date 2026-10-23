@@ -70,11 +70,14 @@ export async function POST(req: NextRequest) {
       heroImage:
         body.heroImage ||
         "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg",
-      gallery: [
-        body.heroImage ||
-          "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg",
-        "/images/unsplash/photo-1518002054494-3a6f94352e9d-1200.jpg",
-      ],
+      gallery:
+        Array.isArray(body.gallery) && body.gallery.length > 0
+          ? body.gallery
+          : [
+              body.heroImage ||
+                "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg",
+              "/images/unsplash/photo-1518002054494-3a6f94352e9d-1200.jpg",
+            ],
       overviewHtml: `<p>${body.overviewText || ""}</p>`,
       overviewText: body.overviewText || "Experience an authentic Himalayan adventure led by veteran Expert Representatives.",
       highlightsHtml: body.highlightsHtml || "<ul><li>Guided by licensed local Expert Representatives</li><li>Handpicked deluxe mountain lodges</li></ul>",
@@ -178,15 +181,19 @@ export async function PUT(req: NextRequest) {
        SET title = COALESCE($2, title),
            duration = COALESCE($3, duration),
            price = COALESCE($4, price),
-           luxury_price = COALESCE($5, luxury_price)
+           luxury_price = COALESCE($5, luxury_price),
+           hero_image = COALESCE($6, hero_image),
+           gallery = COALESCE($7, gallery)
        WHERE slug = $1
        RETURNING *`,
       [
         body.slug,
-        body.title,
-        Number(body.duration),
-        Number(body.price),
-        Number(body.luxuryPrice),
+        body.title || null,
+        body.duration ? Number(body.duration) : null,
+        body.price ? Number(body.price) : null,
+        body.luxuryPrice ? Number(body.luxuryPrice) : null,
+        body.heroImage || null,
+        Array.isArray(body.gallery) ? JSON.stringify(body.gallery) : null,
       ]
     );
     if (res.rowCount === 0) return NextResponse.json({ error: "Package not found" }, { status: 404 });

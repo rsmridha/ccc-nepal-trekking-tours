@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Star, CheckCircle2, Send } from "lucide-react";
+import ImageUploadPreview from "@/components/ImageUploadPreview";
 
 export default function WriteReviewPage() {
   const [author, setAuthor] = useState("");
@@ -11,6 +12,9 @@ export default function WriteReviewPage() {
   const [title, setTitle] = useState("");
   const [rating, setRating] = useState(5);
   const [comment, setComment] = useState("");
+  const [tripPhoto, setTripPhoto] = useState(
+    "/images/upload/package/deluxe-everest-base-camp-trek.jpg"
+  );
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -152,6 +156,13 @@ export default function WriteReviewPage() {
                 className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
               />
             </div>
+
+            <ImageUploadPreview
+              label="Optional Trip Photo (Upload & Live Preview)"
+              value={tripPhoto}
+              onChange={(p) => setTripPhoto(p)}
+              folder="reviews"
+            />
 
             <button
               type="submit"

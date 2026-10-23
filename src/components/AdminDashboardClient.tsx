@@ -42,6 +42,7 @@ import {
 } from "@/lib/db";
 import type { AdminUser, AdminRole } from "@/lib/auth";
 import type { EmailLogRecord } from "@/lib/mailer";
+import ImageUploadPreview, { MultiImageUploadPreview } from "./ImageUploadPreview";
 
 export default function AdminDashboardClient({
   initialDb,
@@ -123,8 +124,12 @@ export default function AdminDashboardClient({
   const [newPrice, setNewPrice] = useState(1899);
   const [newLuxuryPrice, setNewLuxuryPrice] = useState(2699);
   const [newHeroImage, setNewHeroImage] = useState(
-    "/images/unsplash/photo-1544735716-392fe2489ffa-1200.jpg"
+    "/images/upload/package/deluxe-everest-base-camp-trek.jpg"
   );
+  const [newGallery, setNewGallery] = useState<string[]>([
+    "/images/upload/package/slider/deluxe-everest-base-camp-trek-1.jpg",
+    "/images/upload/package/slider/deluxe-everest-base-camp-trek-1-1.jpg",
+  ]);
   const [newOverview, setNewOverview] = useState("");
 
   // New Blog Form State
@@ -211,6 +216,7 @@ export default function AdminDashboardClient({
         price: newPrice,
         luxuryPrice: newLuxuryPrice,
         heroImage: newHeroImage,
+        gallery: newGallery,
         overviewText: newOverview,
         featured: true,
       }),
@@ -857,8 +863,17 @@ export default function AdminDashboardClient({
                   {filteredPackages.map((p) => (
                     <tr key={p.slug} className="hover:bg-slate-50/80">
                       <td className="py-3.5 pr-4">
-                        <div className="font-bold text-[#0b243b]">{p.title}</div>
-                        <div className="text-xs text-slate-400">/{p.slug}</div>
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={p.heroImage}
+                            alt={p.title}
+                            className="w-14 h-10 rounded-lg object-cover border border-slate-200 shrink-0"
+                          />
+                          <div>
+                            <div className="font-bold text-[#0b243b]">{p.title}</div>
+                            <div className="text-xs text-slate-400">/{p.slug}</div>
+                          </div>
+                        </div>
                       </td>
                       <td className="py-3.5 pr-4 font-semibold text-[#006ebf]">
                         {p.region}
@@ -1706,34 +1721,12 @@ export default function AdminDashboardClient({
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
                 />
               </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image (Application Path or Upload File)
-                </label>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={destImage}
-                    onChange={(e) => setDestImage(e.target.value)}
-                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                  />
-                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
-                    Upload Image
-                    <input
-                      type="file"
-                      accept="image/*"
-                      className="hidden"
-                      onChange={(e) =>
-                        handleUploadImageFile(
-                          e.target.files?.[0],
-                          "destination",
-                          (p) => setDestImage(p)
-                        )
-                      }
-                    />
-                  </label>
-                </div>
-              </div>
+              <ImageUploadPreview
+                label="Destination Cover Image (Upload & Live Preview)"
+                value={destImage}
+                onChange={(p) => setDestImage(p)}
+                folder="destination"
+              />
               <button
                 type="submit"
                 className="w-full py-3 rounded-xl bg-[#006ebf] hover:bg-[#0b243b] text-white font-extrabold text-sm"
@@ -1817,36 +1810,12 @@ export default function AdminDashboardClient({
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
                 />
               </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Image (Application Path or Upload File)
-                </label>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={editingDest.image}
-                    onChange={(e) =>
-                      setEditingDest({ ...editingDest, image: e.target.value })
-                    }
-                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                  />
-                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
-                    Upload Image
-                    <input
-                      type="file"
-                      accept="image/*"
-                      className="hidden"
-                      onChange={(e) =>
-                        handleUploadImageFile(
-                          e.target.files?.[0],
-                          "destination",
-                          (p) => setEditingDest({ ...editingDest, image: p })
-                        )
-                      }
-                    />
-                  </label>
-                </div>
-              </div>
+              <ImageUploadPreview
+                label="Destination Cover Image (Upload & Live Preview)"
+                value={editingDest.image}
+                onChange={(p) => setEditingDest({ ...editingDest, image: p })}
+                folder="destination"
+              />
               <button
                 type="submit"
                 className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm"
@@ -2203,34 +2172,18 @@ export default function AdminDashboardClient({
                   />
                 </div>
               </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Hero Image (Application Path or Upload File)
-                </label>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={newHeroImage}
-                    onChange={(e) => setNewHeroImage(e.target.value)}
-                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                  />
-                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
-                    Upload Image
-                    <input
-                      type="file"
-                      accept="image/*"
-                      className="hidden"
-                      onChange={(e) =>
-                        handleUploadImageFile(
-                          e.target.files?.[0],
-                          "package",
-                          (p) => setNewHeroImage(p)
-                        )
-                      }
-                    />
-                  </label>
-                </div>
-              </div>
+              <ImageUploadPreview
+                label="Package Hero Banner Image (Upload & Live Preview)"
+                value={newHeroImage}
+                onChange={(p) => setNewHeroImage(p)}
+                folder="package"
+              />
+              <MultiImageUploadPreview
+                label="Package Gallery Slider Images"
+                values={newGallery}
+                onChange={(vals) => setNewGallery(vals)}
+                folder="package/slider"
+              />
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
                   Package Overview *
@@ -2258,7 +2211,7 @@ export default function AdminDashboardClient({
       {/* Modal: Edit Existing Package */}
       {editingPkg && (
         <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative">
+          <div className="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto relative">
             <button
               type="button"
               onClick={() => setEditingPkg(null)}
@@ -2333,6 +2286,22 @@ export default function AdminDashboardClient({
                   />
                 </div>
               </div>
+              <ImageUploadPreview
+                label="Package Hero Banner Image (Upload & Live Preview)"
+                value={editingPkg.heroImage}
+                onChange={(p) =>
+                  setEditingPkg({ ...editingPkg, heroImage: p })
+                }
+                folder="package"
+              />
+              <MultiImageUploadPreview
+                label="Package Gallery Slider Images"
+                values={editingPkg.gallery || []}
+                onChange={(vals) =>
+                  setEditingPkg({ ...editingPkg, gallery: vals })
+                }
+                folder="package/slider"
+              />
               <button
                 type="submit"
                 className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm"
@@ -2396,34 +2365,12 @@ export default function AdminDashboardClient({
                   />
                 </div>
               </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image (Application Path or Upload File)
-                </label>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={blogImage}
-                    onChange={(e) => setBlogImage(e.target.value)}
-                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                  />
-                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
-                    Upload Image
-                    <input
-                      type="file"
-                      accept="image/*"
-                      className="hidden"
-                      onChange={(e) =>
-                        handleUploadImageFile(
-                          e.target.files?.[0],
-                          "blog",
-                          (p) => setBlogImage(p)
-                        )
-                      }
-                    />
-                  </label>
-                </div>
-              </div>
+              <ImageUploadPreview
+                label="Blog Guide Cover Image (Upload & Live Preview)"
+                value={blogImage}
+                onChange={(p) => setBlogImage(p)}
+                folder="blog"
+              />
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
                   Short Excerpt *
@@ -2521,36 +2468,12 @@ export default function AdminDashboardClient({
                   />
                 </div>
               </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Cover Image (Application Path or Upload File)
-                </label>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={editingBlog.image}
-                    onChange={(e) =>
-                      setEditingBlog({ ...editingBlog, image: e.target.value })
-                    }
-                    className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
-                  />
-                  <label className="px-3 py-2.5 rounded-xl bg-sky-50 border border-sky-200 text-[#006ebf] text-xs font-extrabold cursor-pointer hover:bg-sky-100 shrink-0">
-                    Upload Image
-                    <input
-                      type="file"
-                      accept="image/*"
-                      className="hidden"
-                      onChange={(e) =>
-                        handleUploadImageFile(
-                          e.target.files?.[0],
-                          "blog",
-                          (p) => setEditingBlog({ ...editingBlog, image: p })
-                        )
-                      }
-                    />
-                  </label>
-                </div>
-              </div>
+              <ImageUploadPreview
+                label="Blog Guide Cover Image (Upload & Live Preview)"
+                value={editingBlog.image}
+                onChange={(p) => setEditingBlog({ ...editingBlog, image: p })}
+                folder="blog"
+              />
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
                   Excerpt
