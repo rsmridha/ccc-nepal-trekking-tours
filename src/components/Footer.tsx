@@ -135,8 +135,8 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-2.5 text-slate-200">
                   <Mail className="w-4 h-4 text-sky-400 shrink-0" />
-                  <a href="mailto:info@nepaltrekkingtours.com" className="hover:text-amber-400">
-                    info@nepaltrekkingtours.com
+                  <a href="mailto:info@nomadnoblenepal.com" className="hover:text-amber-400">
+                    info@nomadnoblenepal.com
                   </a>
                 </div>
               </div>

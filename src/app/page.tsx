@@ -182,7 +182,7 @@ export default async function HomePage() {
                 count: "53 reviews",
                 score: "5.0",
                 badgeBg: "bg-indigo-600",
-                url: "https://www.facebook.com/nepaltrekkingtoursofficial/",
+                url: "https://www.facebook.com/nomadnoblenepal/",
               },
             ].map((plat) => (
               <a

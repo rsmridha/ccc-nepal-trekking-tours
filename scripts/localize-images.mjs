@@ -17,9 +17,9 @@ function extractUrls(str) {
     const u = m[0];
     if (
       u.includes("unsplash.com") ||
-      u.includes("webapp.nepaltrekkingtours.com/images/") ||
-      u.includes("webapp.nepaltrekkingtours.com/storage/") ||
-      u.includes("webapp.nepaltrekkingtours.com/public/upload/") ||
+      u.includes("webapp.nomadnoblenepal.com/images/") ||
+      u.includes("webapp.nomadnoblenepal.com/storage/") ||
+      u.includes("webapp.nomadnoblenepal.com/public/upload/") ||
       /\.(jpg|jpeg|png|webp|gif|svg|avif)(\?.*)?$/i.test(u)
     ) {
       urlSet.add(u);
@@ -54,8 +54,8 @@ for (const origUrl of urlSet) {
   let localAppPath = "";
   let fetchCandidates = [];
 
-  if (origUrl.startsWith("https://webapp.nepaltrekkingtours.com/images/upload/")) {
-    const rel = origUrl.replace("https://webapp.nepaltrekkingtours.com", "");
+  if (origUrl.startsWith("https://webapp.nomadnoblenepal.com/images/upload/")) {
+    const rel = origUrl.replace("https://webapp.nomadnoblenepal.com", "");
     localAppPath = decodeURIComponent(rel).replace(/\s+/g, "-");
     fetchCandidates = [origUrl];
   } else if (origUrl.startsWith("/public/upload/editor/images/")) {
@@ -64,8 +64,8 @@ for (const origUrl of urlSet) {
     ).replace(/[^a-zA-Z0-9._-]/g, "-");
     localAppPath = `/images/editor/${filename}`;
     fetchCandidates = [
-      `https://webapp.nepaltrekkingtours.com${origUrl}`,
-      `https://webapp.nepaltrekkingtours.com${origUrl.replace("/public/upload/", "/images/upload/")}`,
+      `https://webapp.nomadnoblenepal.com${origUrl}`,
+      `https://webapp.nomadnoblenepal.com${origUrl.replace("/public/upload/", "/images/upload/")}`,
     ];
   } else if (origUrl.includes("images.unsplash.com/")) {
     const uObj = new URL(origUrl);
@@ -148,7 +148,7 @@ async function run() {
           // Use local fallback buffer if remote file is missing
           if (!fallbackBuffer) {
             fallbackBuffer = await downloadBuffer(
-              "https://webapp.nepaltrekkingtours.com/images/upload/package/deluxe-everest-base-camp-trek.jpg"
+              "https://webapp.nomadnoblenepal.com/images/upload/package/deluxe-everest-base-camp-trek.jpg"
             );
           }
           if (fallbackBuffer) {

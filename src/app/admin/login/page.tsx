@@ -17,7 +17,7 @@ import {
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("admin@nepaltrekkingtours.com");
+  const [email, setEmail] = useState("admin@nomadnoblenepal.com");
   const [password, setPassword] = useState("Admin@1216");
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
@@ -72,7 +72,7 @@ export default function AdminLoginPage() {
             <Mountain className="w-7 h-7 text-white" />
           </div>
           <span className="text-[11px] font-extrabold uppercase tracking-widest text-amber-400 block">
-            webapp.nepaltrekkingtours.com
+            webapp.nomadnoblenepal.com
           </span>
           <h1 className="text-xl font-black mt-1">WebApp CMS Portal Login</h1>
           <p className="text-xs text-slate-300 mt-1">
@@ -101,7 +101,7 @@ export default function AdminLoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@nepaltrekkingtours.com"
+                  placeholder="admin@nomadnoblenepal.com"
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#006ebf]"
                 />
               </div>
@@ -151,7 +151,7 @@ export default function AdminLoginPage() {
             <div className="grid grid-cols-3 gap-2">
               <button
                 type="button"
-                onClick={() => quickFill("admin@nepaltrekkingtours.com", "Admin@1216")}
+                onClick={() => quickFill("admin@nomadnoblenepal.com", "Admin@1216")}
                 className="p-2 rounded-xl border border-slate-200 hover:border-[#006ebf] hover:bg-sky-50/50 text-left transition-colors"
               >
                 <span className="block text-[11px] font-extrabold text-[#0b243b]">
@@ -164,7 +164,7 @@ export default function AdminLoginPage() {
 
               <button
                 type="button"
-                onClick={() => quickFill("manager@nepaltrekkingtours.com", "Manager@1216")}
+                onClick={() => quickFill("manager@nomadnoblenepal.com", "Manager@1216")}
                 className="p-2 rounded-xl border border-slate-200 hover:border-[#006ebf] hover:bg-sky-50/50 text-left transition-colors"
               >
                 <span className="block text-[11px] font-extrabold text-[#0b243b]">
@@ -177,7 +177,7 @@ export default function AdminLoginPage() {
 
               <button
                 type="button"
-                onClick={() => quickFill("support@nepaltrekkingtours.com", "Support@1216")}
+                onClick={() => quickFill("support@nomadnoblenepal.com", "Support@1216")}
                 className="p-2 rounded-xl border border-slate-200 hover:border-[#006ebf] hover:bg-sky-50/50 text-left transition-colors"
               >
                 <span className="block text-[11px] font-extrabold text-[#0b243b]">

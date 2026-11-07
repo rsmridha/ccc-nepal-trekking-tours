@@ -2027,7 +2027,7 @@ export default function AdminDashboardClient({
                   required
                   value={staffEmail}
                   onChange={(e) => setStaffEmail(e.target.value)}
-                  placeholder="dawa@nepaltrekkingtours.com"
+                  placeholder="dawa@nomadnoblenepal.com"
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"
                 />
               </div>

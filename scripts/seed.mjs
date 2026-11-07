@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const API_BASE = "https://webapp.nepaltrekkingtours.com/api";
+const API_BASE = "https://webapp.nomadnoblenepal.com/api";
 const IMAGE_BASE = "/images/misc/upload";
 
 function resolveImage(folder, filename, fallback) {
@@ -449,7 +449,7 @@ async function main() {
       countriesCovered: 3,
       phone: "+1-888-820-8072",
       whatsapp: "+1-888-820-8072",
-      email: "info@nepaltrekkingtours.com",
+      email: "info@nomadnoblenepal.com",
       address: "Thamel, Kathmandu, Nepal",
       expertName: "Expert Representative",
       expertRole: "Founder & Lead Sherpa Trekking Expert",

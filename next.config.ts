@@ -5,11 +5,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "webapp.nepaltrekkingtours.com",
+        hostname: "webapp.nomadnoblenepal.com",
       },
       {
         protocol: "https",
-        hostname: "nepaltrekkingtours.com",
+        hostname: "nomadnoblenepal.com",
       },
       {
         protocol: "https",

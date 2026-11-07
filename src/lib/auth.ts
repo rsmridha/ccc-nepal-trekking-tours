@@ -57,19 +57,19 @@ export async function ensureAuthTables(): Promise<void> {
     const defaultUsers: { name: string; email: string; pass: string; role: AdminRole }[] = [
       {
         name: "Expert Representative",
-        email: "admin@nepaltrekkingtours.com",
+        email: "admin@nomadnoblenepal.com",
         pass: "Admin@1216",
         role: "Super Admin",
       },
       {
         name: "Tendi Sherpa",
-        email: "manager@nepaltrekkingtours.com",
+        email: "manager@nomadnoblenepal.com",
         pass: "Manager@1216",
         role: "Tour Manager",
       },
       {
         name: "Kathmandu Support Desk",
-        email: "support@nepaltrekkingtours.com",
+        email: "support@nomadnoblenepal.com",
         pass: "Support@1216",
         role: "Support Coordinator",
       },
