@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nnn.nepal</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/npm</string>
+        <string>run</string>
+        <string>dev</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>PORT</key>
+        <string>3200</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/.app-3200.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/.app-3200.log</string>
+</dict>
+</plist>
