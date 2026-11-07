@@ -81,6 +81,14 @@ logs() {
   fi
 }
 
+clean() {
+  stop
+  echo "[NNN] Clearing .next build cache..."
+  rm -rf "$DIR/.next"
+  echo " [NNN] Cache cleared."
+  start
+}
+
 case "$1" in
   start)
     start
@@ -93,6 +101,9 @@ case "$1" in
     sleep 1
     start
     ;;
+  clean)
+    clean
+    ;;
   status)
     status
     ;;
@@ -100,7 +111,7 @@ case "$1" in
     logs
     ;;
   *)
-    echo "Usage: ./run.sh {start|stop|restart|status|logs}"
+    echo "Usage: ./run.sh {start|stop|restart|clean|status|logs}"
     exit 1
     ;;
 esac
