@@ -48,7 +48,7 @@ export async function ensureEmailTable(): Promise<void> {
           buildEmailWrapper(
             "Official Booking Confirmation",
             `<p>Namaste <strong>David Miller</strong>,</p>
-             <p>Thank you for choosing <strong>CCC Nepal Trekking Tours</strong>! Your reservation for <strong>Deluxe Everest Base Camp Trek</strong> (2 Guests, departing 2026-10-12) is confirmed.</p>
+             <p>Thank you for choosing <strong>Nomad & Noble Nepal (NNN)</strong>! Your reservation for <strong>Deluxe Everest Base Camp Trek</strong> (2 Guests, departing 2026-10-12) is confirmed.</p>
              <p><strong>Booking Reference:</strong> BK-2026-1001<br/>
              <strong>Total Package Amount:</strong> USD 3,798<br/>
              <strong>Deposit Received:</strong> USD 760 (20% Deposit Paid)</p>
@@ -69,7 +69,7 @@ function buildEmailWrapper(headline: string, innerHtml: string): string {
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 620px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; background: #ffffff;">
       <div style="background: #0b243b; color: #ffffff; padding: 24px 28px;">
         <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #38bdf8; font-weight: 700;">
-          CCC Nepal Trekking Tours · Kathmandu, Nepal
+          Nomad & Noble Nepal (NNN) · Kathmandu, Nepal
         </div>
         <h2 style="margin: 6px 0 0; font-size: 20px; font-weight: 800;">${headline}</h2>
       </div>
@@ -79,7 +79,7 @@ function buildEmailWrapper(headline: string, innerHtml: string): string {
         <p style="margin: 0; font-size: 13px; color: #475569;">
           Warm Himalayan Regards,<br/>
           <strong style="color: #0b243b;">Expert Representative</strong><br/>
-          Lead Expedition Coordinator · CCC Nepal Trekking Tours Pvt. Ltd.<br/>
+          Lead Expedition Coordinator · Nomad & Noble Nepal (NNN) Pvt. Ltd.<br/>
           Kaldhara Marg, Thamel, Kathmandu · +1-888-820-8072
         </p>
       </div>
@@ -134,7 +134,7 @@ export async function sendBookingConfirmationEmail(booking: BookingRecord) {
   const html = buildEmailWrapper(
     `Booking Confirmation [${booking.id}]`,
     `<p>Namaste <strong>${booking.customerName}</strong>,</p>
-     <p>Your Himalayan expedition with <strong>CCC Nepal Trekking Tours</strong> has been officially registered and assigned to our Lead Expedition Coordinator, <strong>Expert Representative</strong>.</p>
+     <p>Your Himalayan expedition with <strong>Nomad & Noble Nepal (NNN)</strong> has been officially registered and assigned to our Lead Expedition Coordinator, <strong>Expert Representative</strong>.</p>
      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 16px 0;">
        <p style="margin: 4px 0;"><strong>Booking Reference:</strong> ${booking.id}</p>
        <p style="margin: 4px 0;"><strong>Package:</strong> ${booking.packageTitle}</p>
@@ -214,7 +214,7 @@ export async function sendInquiryAcknowledgementEmail(inquiry: InquiryRecord) {
   const html = buildEmailWrapper(
     `We Received Your Inquiry [${inquiry.id}]`,
     `<p>Namaste <strong>${inquiry.name}</strong>,</p>
-     <p>Thank you for contacting <strong>CCC Nepal Trekking Tours</strong> regarding <strong>"${inquiry.subject}"</strong>.</p>
+     <p>Thank you for contacting <strong>Nomad & Noble Nepal (NNN)</strong> regarding <strong>"${inquiry.subject}"</strong>.</p>
      <p>Your inquiry reference is <strong>${inquiry.id}</strong>. Our Kathmandu desk led by <strong>Expert Representative</strong> will respond shortly with detailed guidance.</p>`
   );
 

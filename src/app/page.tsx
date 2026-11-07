@@ -218,16 +218,16 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#006ebf] block mb-2">
-              Since 1999 · Experience the Luxury in Himalaya
+              Nomad & Noble Nepal (NNN) · Curated Without Compromise
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0b243b] leading-tight">
               Discover Luxury Tours & Treks Across Nepal, Bhutan & Tibet
             </h2>
             <div className="w-16 h-1 bg-amber-500 mx-auto my-5 rounded-full" />
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              <strong>CCC Nepal Trekking Tours</strong> is an established Himalayan adventure trekking, hiking, and peak climbing agency in Nepal with over 27 years of experience, owned and managed by professional local Expert Representatives. Our core mission is to deliver the highest quality <strong>Deluxe and Luxury lodge treks, helicopter tours, and climbing expeditions</strong> across Nepal, Tibet, and Bhutan with our live motto:{" "}
+              <strong>Nomad & Noble Nepal (NNN)</strong> is an established Himalayan adventure trekking, hiking, and peak climbing agency in Nepal with over 27 years of experience, owned and managed by professional local Expert Representatives. Our core mission is to deliver the highest quality <strong>Deluxe and Luxury lodge treks, helicopter tours, and climbing expeditions</strong> across Nepal, Tibet, and Bhutan with our live motto:{" "}
               <span className="text-rose-700 font-bold">
-                &ldquo;Experience the Luxury in Himalaya.&rdquo;
+                &ldquo;The Ultimate Everest Experience, Curated Without Compromise.&rdquo;
               </span>
             </p>
           </div>

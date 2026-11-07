@@ -48,7 +48,7 @@ export default function ContactUsPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#006ebf] shrink-0 mt-0.5" />
                 <span>
-                  CCC Nepal Trekking Tours & Adventure Pvt. Ltd.
+                  Nomad & Noble Nepal (NNN) Pvt. Ltd.
                   <br />
                   Thamel, Kathmandu 44600, Nepal
                 </span>
@@ -100,7 +100,7 @@ export default function ContactUsPage() {
                 Message Sent Successfully!
               </div>
               <p className="text-sm">
-                Thank you for contacting CCC Nepal Trekking Tours. Our Expert Representative will respond to your message shortly.
+                Thank you for contacting Nomad & Noble Nepal (NNN). Our Expert Representative will respond to your message shortly.
               </p>
             </div>
           ) : (

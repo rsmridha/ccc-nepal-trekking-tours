@@ -80,10 +80,10 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
           </div>
           <div>
             <span className="block text-lg sm:text-xl font-extrabold tracking-tight text-[#0b243b] leading-none">
-              CCC NEPAL TREKKING <span className="text-[#006ebf]">TOURS</span>
+              NOMAD & NOBLE <span className="text-[#006ebf]">NEPAL (NNN)</span>
             </span>
-            <span className="block text-[11px] font-semibold uppercase tracking-widest text-amber-600 mt-1">
-              Locally Owned · Himalayan Luxury Since 1999
+            <span className="block text-[11px] font-semibold tracking-wide text-amber-600 mt-1 line-clamp-1">
+              The Ultimate Everest Experience, Curated Without Compromise.
             </span>
           </div>
         </Link>
@@ -173,7 +173,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
               Home
             </Link>
 
-            {/* Mega Menu 1: Deluxe CCC Nepal Trekking Tours */}
+            {/* Mega Menu 1: Deluxe Nomad & Noble Nepal */}
             <div
               className="relative"
               onMouseEnter={() => setActiveDropdown("deluxe")}
@@ -183,7 +183,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
                 href="/destination/deluxe-nepal-trekking-tours"
                 className="px-4 py-3.5 text-sm font-semibold text-slate-100 hover:text-amber-300 hover:bg-white/5 inline-flex items-center gap-1.5 transition-colors"
               >
-                Deluxe CCC Nepal Trekking Tours
+                Deluxe Nomad & Noble Nepal
                 <ChevronDown className="w-4 h-4 opacity-75" />
               </Link>
               {activeDropdown === "deluxe" && (
@@ -273,7 +273,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
               )}
             </div>
 
-            {/* Mega Menu 2: Luxury CCC Nepal Trekking Tours */}
+            {/* Mega Menu 2: Luxury Nomad & Noble Nepal */}
             <div
               className="relative"
               onMouseEnter={() => setActiveDropdown("luxury")}
@@ -284,7 +284,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
                 className="px-4 py-3.5 text-sm font-semibold text-slate-100 hover:text-amber-300 hover:bg-white/5 inline-flex items-center gap-1.5 transition-colors"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                Luxury CCC Nepal Trekking Tours
+                Luxury Nomad & Noble Nepal
                 <ChevronDown className="w-4 h-4 opacity-75" />
               </Link>
               {activeDropdown === "luxury" && (
@@ -384,7 +384,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
               {activeDropdown === "about" && (
                 <div className="absolute left-0 top-full w-72 bg-white text-slate-800 rounded-b-2xl shadow-2xl border border-slate-200 py-3 z-50">
                   <Link href="/about" className="block px-5 py-2.5 text-sm font-medium hover:bg-slate-50 hover:text-[#006ebf]">
-                    About CCC Nepal Trekking Tours
+                    About Nomad & Noble Nepal (NNN)
                   </Link>
                   <Link href="/team" className="block px-5 py-2.5 text-sm font-medium hover:bg-slate-50 hover:text-[#006ebf]">
                     Meet Our Expert Representative Team
@@ -490,10 +490,10 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
             Home
           </Link>
           <Link href="/destination/deluxe-nepal-trekking-tours" className="block py-2 font-bold text-slate-800">
-            Deluxe CCC Nepal Trekking Tours
+            Deluxe Nomad & Noble Nepal
           </Link>
           <Link href="/destination/luxury-nepal-trekking-tours" className="block py-2 font-bold text-slate-800">
-            Luxury CCC Nepal Trekking Tours
+            Luxury Nomad & Noble Nepal
           </Link>
           <Link href="/destination/peak-climbing-in-nepal" className="block py-2 font-bold text-slate-800">
             Peak Climbing in Nepal

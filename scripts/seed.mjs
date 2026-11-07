@@ -212,7 +212,7 @@ async function main() {
   const destinations = [
     {
       id: 1,
-      title: "Deluxe CCC Nepal Trekking Tours",
+      title: "Deluxe Nomad & Noble Nepal",
       slug: "deluxe-nepal-trekking-tours",
       subtitle: "Signature comfort treks with handpicked mountain lodges, private transfers, and veteran Sherpa guides.",
       image: "/images/upload/destination/deluxe-nepal-trekking-tours.jpg",
@@ -221,7 +221,7 @@ async function main() {
     },
     {
       id: 2,
-      title: "Luxury CCC Nepal Trekking Tours",
+      title: "Luxury Nomad & Noble Nepal",
       slug: "luxury-nepal-trekking-tours",
       subtitle: "5-star heritage stays, Yeti Mountain Homes, gourmet dining, and scenic helicopter returns.",
       image: "/images/upload/destination/luxury-nepal-trekking-tours.jpg",
@@ -440,9 +440,9 @@ async function main() {
 
   const db = {
     settings: {
-      siteName: "CCC Nepal Trekking Tours",
-      tagline: "Himalayan Adventures Since 1999",
-      slogan: "Experience the Luxury in Himalaya",
+      siteName: "Nomad & Noble Nepal (NNN)",
+      tagline: "The Ultimate Everest Experience, Curated Without Compromise.",
+      slogan: "The Ultimate Everest Experience, Curated Without Compromise.",
       establishedYear: 1999,
       yearsExperience: "27+",
       happyTravelers: "15,000+",

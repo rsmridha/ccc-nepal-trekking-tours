@@ -44,7 +44,7 @@ export default function PaymentPage() {
             Option 2: Direct Bank Wire Transfer (SWIFT)
           </h2>
           <div className="text-xs sm:text-sm text-slate-600 space-y-1.5 bg-slate-50 p-4 rounded-2xl border border-slate-200">
-            <p><strong>Beneficiary:</strong> CCC Nepal Trekking Tours & Adventure Pvt. Ltd.</p>
+            <p><strong>Beneficiary:</strong> Nomad & Noble Nepal (NNN) Pvt. Ltd.</p>
             <p><strong>Bank Name:</strong> Himalayan Bank Limited, Thamel Branch</p>
             <p><strong>Account Location:</strong> Kathmandu, Nepal</p>
             <p><strong>SWIFT Code:</strong> HIMANPKA</p>

@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import { getDbAsync } from "@/lib/db";
 
 export const metadata: Metadata = {
-  title: "CCC Nepal Trekking Tours - Himalayan Adventures Since 1999",
+  title: "Nomad & Noble Nepal (NNN) - The Ultimate Everest Experience, Curated Without Compromise.",
   description:
-    "Deluxe & Luxury Trekking, Helicopter Tours, and Peak Climbing Expeditions in Nepal, Tibet, and Bhutan led by veteran local Expert Representatives since 1999.",
+    "The Ultimate Everest Experience, Curated Without Compromise. Deluxe & Luxury Trekking, Helicopter Tours, and Peak Climbing Expeditions in Nepal, Tibet, and Bhutan led by veteran local Expert Representatives.",
 };
 
 export default async function RootLayout({

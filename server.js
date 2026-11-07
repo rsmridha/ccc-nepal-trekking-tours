@@ -21,7 +21,7 @@ app.prepare().then(() => {
     }
   }).listen(port, hostname, () => {
     console.log(
-      `> CCC Nepal Trekking Tours ready on http://${hostname}:${port} (${
+      `> Nomad & Noble Nepal (NNN) ready on http://${hostname}:${port} (${
         dev ? "development" : "production"
       })`
     );

@@ -12,10 +12,10 @@ export default function AboutPage() {
             Locally Owned & Operated Since 1999
           </span>
           <h1 className="text-3xl sm:text-5xl font-black">
-            About CCC Nepal Trekking Tours
+            About Nomad & Noble Nepal (NNN)
           </h1>
           <p className="text-sky-100 mt-2 max-w-2xl text-sm sm:text-base">
-            27+ years of crafting Deluxe Lodge Treks, 5-Star Luxury Himalayan Holidays & NMA Peak Expeditions across Nepal, Tibet, and Bhutan.
+            The Ultimate Everest Experience, Curated Without Compromise. Deluxe Lodge Treks, 5-Star Luxury Himalayan Holidays & NMA Peak Expeditions across Nepal, Tibet, and Bhutan.
           </p>
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function AboutPage() {
             Our Himalayan Heritage & Mission
           </h2>
           <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-            Founded in 1999 by veteran Everest Expert Representative <strong>Expert Representative</strong>, <strong>CCC Nepal Trekking Tours & Adventure Pvt. Ltd.</strong> was born out of a simple conviction: travelers visiting the roof of the world deserve the warmth of authentic Sherpa hospitality combined with the highest standards of lodge comfort, safety, and personalized care.
+            Founded in 1999 by veteran Everest Expert Representative <strong>Expert Representative</strong>, <strong>Nomad & Noble Nepal (NNN) Pvt. Ltd.</strong> was born out of a simple conviction: travelers visiting the roof of the world deserve the warmth of authentic Sherpa hospitality combined with the highest standards of lodge comfort, safety, and personalized care.
           </p>
           <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
             Unlike overseas middlemen, every trip you book with us is operated directly by our Kathmandu and Solukhumbu Expert Representative Team—meaning fair wages and insurance for our guides and porters, complimentary 20kg domestic flight baggage allowances, and handpicked attached-bath deluxe and 5-star mountain lodges.

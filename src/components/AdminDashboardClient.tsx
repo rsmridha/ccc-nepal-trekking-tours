@@ -579,8 +579,8 @@ export default function AdminDashboardClient({
                 <span className="block text-sm font-black tracking-wide text-white">
                   WEBAPP CMS
                 </span>
-                <span className="block text-[11px] text-amber-400 font-semibold">
-                  CCC Nepal Trekking Tours
+                <span className="block text-[11px] text-amber-400 font-semibold truncate max-w-[150px]">
+                  Nomad & Noble Nepal (NNN)
                 </span>
               </div>
             </Link>

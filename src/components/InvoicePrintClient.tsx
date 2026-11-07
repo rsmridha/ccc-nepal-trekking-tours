@@ -71,7 +71,7 @@ export default function InvoicePrintClient({
               </div>
               <div>
                 <h1 className="text-xl sm:text-2xl font-black tracking-tight">
-                  CCC NEPAL TREKKING TOURS
+                  NOMAD & NOBLE NEPAL (NNN)
                 </h1>
                 <p className="text-xs text-sky-300 font-semibold">
                   Govt. Regd. Himalayan Adventure & Luxury Expedition Operator
@@ -259,7 +259,7 @@ export default function InvoicePrintClient({
                 Expert Representative
               </div>
               <div className="font-extrabold text-slate-700">Authorized Signatory</div>
-              <div>CCC Nepal Trekking Tours Pvt. Ltd., Kathmandu</div>
+              <div>Nomad & Noble Nepal (NNN) Pvt. Ltd., Kathmandu</div>
             </div>
           </div>
         </div>
