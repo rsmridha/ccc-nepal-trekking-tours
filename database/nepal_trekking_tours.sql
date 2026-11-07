@@ -629,10 +629,10 @@ COPY public.site_settings (id, data, updated_at) FROM stdin;
 --
 
 COPY public.team_members (id, name, role, experience, bio, image, certifications) FROM stdin;
-1	Expert Representative	Founder & Managing Director / Lead Expedition Guide	27+ Years in the Himalayas	Born in the Solukhumbu (Everest) region, Expert Representative has led over 300 deluxe and luxury treks across Nepal, Tibet, and Bhutan since 1999.	https://nepaltrekkingtours.com/images/Expert Representative.png	["Government Licensed Trekking & Mountaineering Guide", "Wilderness First Responder (WFR)", "STEAN Founding Member"]
 2	Pema Dorjee Sherpa	Senior Trekking & Peak Climbing Guide	18+ Years Experience	Summit specialist for Island Peak, Mera Peak, and Lobuche East, known for his deep cultural stories, warmth, and impeccable high-altitude safety record.	/images/unsplash/photo-1534528741775-53994a69daeb-600.jpg	["NMA High Altitude Climbing Guide", "High Altitude First Aid Certified"]
 3	Tendi Sherpa	Head of Operations & Guest Relations (Kathmandu)	16+ Years Experience	Oversees all airport welcomes, domestic flight logistics, luxury hotel partnerships, and 24/7 satellite on-trip support.	/images/unsplash/photo-1507003211169-0a1dd7228f2d-600.jpg	["Tourism Management Degree", "TAAN Coordinator"]
 4	Ngima Tendi Sherpa	Senior Expert Representative & Logistics Leader	14+ Years Experience	Expert on Annapurna, Manaslu Circuit, and Upper Mustang trails with a passion for sustainable Himalayan hospitality.	/images/unsplash/photo-1500648767791-00dcc994a43e-600.jpg	["KEEP Eco-Trekking Certified", "Government Licensed Guide"]
+1	Expert Representative	Founder & Managing Director / Lead Expedition Guide	27+ Years in the Himalayas	Born in the Solukhumbu (Everest) region, Expert Representative has led over 300 deluxe and luxury treks across Nepal, Tibet, and Bhutan since 1999.	/images/no-image.png	["Government Licensed Trekking & Mountaineering Guide", "Wilderness First Responder (WFR)", "STEAN Founding Member"]
 \.
 
 

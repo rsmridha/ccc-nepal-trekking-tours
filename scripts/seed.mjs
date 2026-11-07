@@ -334,7 +334,7 @@ async function main() {
       role: "Founder & Managing Director / Lead Expedition Guide",
       experience: "27+ Years in the Himalayas",
       bio: "Born in the Solukhumbu (Everest) region, our Expert Representative has led over 300 deluxe and luxury treks across Nepal, Tibet, and Bhutan since 1999.",
-      image: "/images/team/expert-representative.png",
+      image: "/images/no-image.png",
       certifications: ["Government Licensed Trekking & Mountaineering Guide", "Wilderness First Responder (WFR)", "STEAN Founding Member"],
     },
     {
