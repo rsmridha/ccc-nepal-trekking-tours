@@ -259,7 +259,7 @@ export default function InvoicePrintClient({
                 Expert Representative
               </div>
               <div className="font-extrabold text-slate-700">Authorized Signatory</div>
-              <div>Nomad & Noble Nepal Pvt. Ltd., Kathmandu</div>
+              <div>Nomad & Noble Nepal, Kathmandu</div>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function ContactUsPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#006ebf] shrink-0 mt-0.5" />
                 <span>
-                  Nomad & Noble Nepal Pvt. Ltd.
+                  Nomad & Noble Nepal
                   <br />
                   Thamel, Kathmandu 44600, Nepal
                 </span>

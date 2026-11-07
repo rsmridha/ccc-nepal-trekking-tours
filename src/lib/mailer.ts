@@ -79,7 +79,7 @@ function buildEmailWrapper(headline: string, innerHtml: string): string {
         <p style="margin: 0; font-size: 13px; color: #475569;">
           Warm Himalayan Regards,<br/>
           <strong style="color: #0b243b;">Expert Representative</strong><br/>
-          Lead Expedition Coordinator · Nomad & Noble Nepal Pvt. Ltd.<br/>
+          Lead Expedition Coordinator · Nomad & Noble Nepal<br/>
           Kaldhara Marg, Thamel, Kathmandu · +1-888-820-8072
         </p>
       </div>

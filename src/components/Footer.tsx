@@ -305,7 +305,7 @@ export default function Footer() {
               </span>
             </div>
             <p>
-              © {new Date().getFullYear()} Nomad & Noble Nepal Pvt. Ltd. All rights reserved.
+              © {new Date().getFullYear()} Nomad & Noble Nepal. All rights reserved.
             </p>
           </div>
         </div>

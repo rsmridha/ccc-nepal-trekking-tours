@@ -20,7 +20,7 @@ export default function TermsPage() {
             1. Reservation & 20% Deposit
           </h2>
           <p>
-            To confirm your trek, peak climbing expedition, or luxury tour with Nomad & Noble Nepal Pvt. Ltd., a 20% non-refundable advance deposit (along with a copy of your passport) is required at the time of booking to secure domestic Lukla/Pokhara air tickets, luxury mountain lodges, and government permits.
+            To confirm your trek, peak climbing expedition, or luxury tour with Nomad & Noble Nepal, a 20% non-refundable advance deposit (along with a copy of your passport) is required at the time of booking to secure domestic Lukla/Pokhara air tickets, luxury mountain lodges, and government permits.
           </p>
 
           <h2 className="text-xl font-extrabold text-[#0b243b]">

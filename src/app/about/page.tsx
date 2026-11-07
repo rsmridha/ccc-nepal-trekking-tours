@@ -26,7 +26,7 @@ export default function AboutPage() {
             Our Himalayan Heritage & Mission
           </h2>
           <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-            Founded in 1999 by veteran Everest Expert Representative <strong>Expert Representative</strong>, <strong>Nomad & Noble Nepal Pvt. Ltd.</strong> was born out of a simple conviction: travelers visiting the roof of the world deserve the warmth of authentic Sherpa hospitality combined with the highest standards of lodge comfort, safety, and personalized care.
+            Founded in 1999 by veteran Everest Expert Representative <strong>Expert Representative</strong>, <strong>Nomad & Noble Nepal</strong> was born out of a simple conviction: travelers visiting the roof of the world deserve the warmth of authentic Sherpa hospitality combined with the highest standards of lodge comfort, safety, and personalized care.
           </p>
           <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
             Unlike overseas middlemen, every trip you book with us is operated directly by our Kathmandu and Solukhumbu Expert Representative Team—meaning fair wages and insurance for our guides and porters, complimentary 20kg domestic flight baggage allowances, and handpicked attached-bath deluxe and 5-star mountain lodges.
