@@ -440,7 +440,7 @@ async function main() {
 
   const db = {
     settings: {
-      siteName: "Nomad & Noble Nepal (NNN)",
+      siteName: "Nomad & Noble Nepal",
       tagline: "The Ultimate Everest Experience, Curated Without Compromise.",
       slogan: "The Ultimate Everest Experience, Curated Without Compromise.",
       establishedYear: 1999,

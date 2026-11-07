@@ -37,7 +37,7 @@ export default function WhyUsPage() {
             Why Is Your Holiday Only With Us?
           </h1>
           <p className="text-sky-100 mt-2 text-sm sm:text-base">
-            Discover why 98% of our guests return or recommend Nomad & Noble Nepal (NNN) to their friends and family.
+            Discover why 98% of our guests return or recommend Nomad & Noble Nepal to their friends and family.
           </p>
         </div>
       </div>

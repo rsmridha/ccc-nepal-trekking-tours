@@ -171,7 +171,7 @@ export default function ItineraryPrintClient({
           <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-slate-500">
             <div>
               <strong className="text-[#0b243b] block">
-                Nomad & Noble Nepal (NNN) Pvt. Ltd. — Thamel, Kathmandu, Nepal
+                Nomad & Noble Nepal Pvt. Ltd. — Thamel, Kathmandu, Nepal
               </strong>
               <span>
                 Direct Expedition Desk (Expert Representative): {settings.phone} · {settings.email}

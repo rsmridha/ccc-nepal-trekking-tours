@@ -1,4 +1,4 @@
-# Deploying Nomad & Noble Nepal (NNN) to Namecheap (Subdomain + Subfolder via GitHub & cPanel)
+# Deploying Nomad & Noble Nepal to Namecheap (Subdomain + Subfolder via GitHub & cPanel)
 
 This repository is pre-configured for **Namecheap cPanel** with **Setup Node.js App** (`server.js`) and **PostgreSQL** (`database/nepal_trekking_tours.sql`).
 

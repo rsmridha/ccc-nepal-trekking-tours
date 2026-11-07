@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { getDbAsync } from "@/lib/db";
 
 export const metadata: Metadata = {
-  title: "Nomad & Noble Nepal (NNN) - The Ultimate Everest Experience, Curated Without Compromise.",
+  title: "Nomad & Noble Nepal - The Ultimate Everest Experience, Curated Without Compromise.",
   description:
     "The Ultimate Everest Experience, Curated Without Compromise. Deluxe & Luxury Trekking, Helicopter Tours, and Peak Climbing Expeditions in Nepal, Tibet, and Bhutan led by veteran local Expert Representatives.",
 };

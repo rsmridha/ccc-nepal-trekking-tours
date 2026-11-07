@@ -21,7 +21,7 @@ app.prepare().then(() => {
     }
   }).listen(port, hostname, () => {
     console.log(
-      `> Nomad & Noble Nepal (NNN) ready on http://${hostname}:${port} (${
+      `> Nomad & Noble Nepal ready on http://${hostname}:${port} (${
         dev ? "development" : "production"
       })`
     );

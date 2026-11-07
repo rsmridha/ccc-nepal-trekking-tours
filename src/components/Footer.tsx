@@ -112,7 +112,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <span className="block text-lg font-extrabold text-white leading-none">
-                    NOMAD & NOBLE NEPAL (NNN)
+                    NOMAD & NOBLE NEPAL
                   </span>
                   <span className="block text-[11px] font-semibold tracking-wide text-amber-400 mt-1">
                     The Ultimate Everest Experience, Curated Without Compromise.
@@ -305,7 +305,7 @@ export default function Footer() {
               </span>
             </div>
             <p>
-              © {new Date().getFullYear()} Nomad & Noble Nepal (NNN) Pvt. Ltd. All rights reserved.
+              © {new Date().getFullYear()} Nomad & Noble Nepal Pvt. Ltd. All rights reserved.
             </p>
           </div>
         </div>

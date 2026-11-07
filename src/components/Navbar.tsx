@@ -80,7 +80,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
           </div>
           <div>
             <span className="block text-lg sm:text-xl font-extrabold tracking-tight text-[#0b243b] leading-none">
-              NOMAD & NOBLE <span className="text-[#006ebf]">NEPAL (NNN)</span>
+              NOMAD & NOBLE <span className="text-[#006ebf]">NEPAL</span>
             </span>
             <span className="block text-[11px] font-semibold tracking-wide text-amber-600 mt-1 line-clamp-1">
               The Ultimate Everest Experience, Curated Without Compromise.
@@ -384,7 +384,7 @@ export default function Navbar({ packages = [] }: { packages?: NavPackageSummary
               {activeDropdown === "about" && (
                 <div className="absolute left-0 top-full w-72 bg-white text-slate-800 rounded-b-2xl shadow-2xl border border-slate-200 py-3 z-50">
                   <Link href="/about" className="block px-5 py-2.5 text-sm font-medium hover:bg-slate-50 hover:text-[#006ebf]">
-                    About Nomad & Noble Nepal (NNN)
+                    About Nomad & Noble Nepal
                   </Link>
                   <Link href="/team" className="block px-5 py-2.5 text-sm font-medium hover:bg-slate-50 hover:text-[#006ebf]">
                     Meet Our Expert Representative Team
