@@ -1,0 +1,219 @@
+[
+  {
+    "id": "01-homepage",
+    "path": "/",
+    "title": "Homepage (Hero, Pillars, Treks)",
+    "filename": "01-homepage.png",
+    "sizeKb": "995",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/01-homepage.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/01-homepage.png"
+  },
+  {
+    "id": "02-treks-catalog",
+    "path": "/treks",
+    "title": "Treks Search & Catalog",
+    "filename": "02-treks-catalog.png",
+    "sizeKb": "1154",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/02-treks-catalog.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/02-treks-catalog.png"
+  },
+  {
+    "id": "03-package-everest-base-camp",
+    "path": "/deluxe-everest-base-camp-trek",
+    "title": "Package: Deluxe Everest Base Camp",
+    "filename": "03-package-everest-base-camp.png",
+    "sizeKb": "794",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/03-package-everest-base-camp.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/03-package-everest-base-camp.png"
+  },
+  {
+    "id": "04-package-annapurna-base-camp",
+    "path": "/deluxe-annapurna-base-camp-trek",
+    "title": "Package: Deluxe Annapurna Base Camp",
+    "filename": "04-package-annapurna-base-camp.png",
+    "sizeKb": "793",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/04-package-annapurna-base-camp.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/04-package-annapurna-base-camp.png"
+  },
+  {
+    "id": "05-package-helicopter-ebc",
+    "path": "/luxury-helicopter-everest-base-camp-trek",
+    "title": "Package: Luxury Helicopter EBC Trek",
+    "filename": "05-package-helicopter-ebc.png",
+    "sizeKb": "816",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/05-package-helicopter-ebc.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/05-package-helicopter-ebc.png"
+  },
+  {
+    "id": "06-package-island-peak",
+    "path": "/deluxe-island-peak-expedition",
+    "title": "Package: Deluxe Island Peak Climbing",
+    "filename": "06-package-island-peak.png",
+    "sizeKb": "476",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/06-package-island-peak.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/06-package-island-peak.png"
+  },
+  {
+    "id": "07-destination-deluxe-nepal",
+    "path": "/destination/deluxe-nepal-trekking-tours",
+    "title": "Destination: Deluxe Nepal Tours",
+    "filename": "07-destination-deluxe-nepal.png",
+    "sizeKb": "907",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/07-destination-deluxe-nepal.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/07-destination-deluxe-nepal.png"
+  },
+  {
+    "id": "08-custom-trip-planner",
+    "path": "/custom-trip",
+    "title": "Bespoke Custom Trip Planner",
+    "filename": "08-custom-trip-planner.png",
+    "sizeKb": "699",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/08-custom-trip-planner.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/08-custom-trip-planner.png"
+  },
+  {
+    "id": "09-booking-checkout",
+    "path": "/booking?slug=deluxe-everest-base-camp-trek",
+    "title": "Live Booking Engine & Form",
+    "filename": "09-booking-checkout.png",
+    "sizeKb": "835",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/09-booking-checkout.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/09-booking-checkout.png"
+  },
+  {
+    "id": "10-payment-methods",
+    "path": "/payment",
+    "title": "Payment & Wire Transfer Details",
+    "filename": "10-payment-methods.png",
+    "sizeKb": "136",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/10-payment-methods.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/10-payment-methods.png"
+  },
+  {
+    "id": "11-about-us",
+    "path": "/about",
+    "title": "About Nomad & Noble Nepal",
+    "filename": "11-about-us.png",
+    "sizeKb": "167",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/11-about-us.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/11-about-us.png"
+  },
+  {
+    "id": "12-why-choose-us",
+    "path": "/why-us",
+    "title": "Why Choose Us (6 Sherpa Pillars)",
+    "filename": "12-why-choose-us.png",
+    "sizeKb": "137",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/12-why-choose-us.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/12-why-choose-us.png"
+  },
+  {
+    "id": "13-contact-us",
+    "path": "/contact-us",
+    "title": "Contact Us & Head Office",
+    "filename": "13-contact-us.png",
+    "sizeKb": "140",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/13-contact-us.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/13-contact-us.png"
+  },
+  {
+    "id": "14-our-team",
+    "path": "/team",
+    "title": "Meet Our Expert Team",
+    "filename": "14-our-team.png",
+    "sizeKb": "212",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/14-our-team.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/14-our-team.png"
+  },
+  {
+    "id": "15-customer-reviews",
+    "path": "/review",
+    "title": "Verified Customer Reviews",
+    "filename": "15-customer-reviews.png",
+    "sizeKb": "175",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/15-customer-reviews.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/15-customer-reviews.png"
+  },
+  {
+    "id": "16-write-a-review",
+    "path": "/write-a-review",
+    "title": "Submit a Trip Review Form",
+    "filename": "16-write-a-review.png",
+    "sizeKb": "107",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/16-write-a-review.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/16-write-a-review.png"
+  },
+  {
+    "id": "17-faqs-equipment-list",
+    "path": "/nepal-trekking-faqs",
+    "title": "FAQs & High-Altitude Equipment",
+    "filename": "17-faqs-equipment-list.png",
+    "sizeKb": "187",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/17-faqs-equipment-list.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/17-faqs-equipment-list.png"
+  },
+  {
+    "id": "18-terms-and-policies",
+    "path": "/terms",
+    "title": "Booking Terms & Policies",
+    "filename": "18-terms-and-policies.png",
+    "sizeKb": "151",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/18-terms-and-policies.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/18-terms-and-policies.png"
+  },
+  {
+    "id": "19-blog-guides",
+    "path": "/blog",
+    "title": "Editorial Trekking Guides Listing",
+    "filename": "19-blog-guides.png",
+    "sizeKb": "573",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/19-blog-guides.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/19-blog-guides.png"
+  },
+  {
+    "id": "20-blog-article-detail",
+    "path": "/blog/top-7-luxury-treks-in-nepal",
+    "title": "Blog Article: Top 7 Luxury Treks",
+    "filename": "20-blog-article-detail.png",
+    "sizeKb": "375",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/20-blog-article-detail.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/20-blog-article-detail.png"
+  },
+  {
+    "id": "21-printable-invoice",
+    "path": "/invoice/BK-2026-1001",
+    "title": "Official Printable Invoice (BK-2026-1001)",
+    "filename": "21-printable-invoice.png",
+    "sizeKb": "149",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/21-printable-invoice.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/21-printable-invoice.png"
+  },
+  {
+    "id": "22-printable-itinerary",
+    "path": "/itinerary/deluxe-everest-base-camp-trek",
+    "title": "Official Printable Itinerary",
+    "filename": "22-printable-itinerary.png",
+    "sizeKb": "193",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/22-printable-itinerary.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/22-printable-itinerary.png"
+  },
+  {
+    "id": "23-admin-login-portal",
+    "path": "/admin/login",
+    "title": "Admin Portal Sign-In Screen",
+    "filename": "23-admin-login-portal.png",
+    "sizeKb": "314",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/23-admin-login-portal.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/23-admin-login-portal.png"
+  },
+  {
+    "id": "24-admin-dashboard",
+    "path": "/admin",
+    "title": "Admin Operations Dashboard",
+    "auth": true,
+    "filename": "24-admin-dashboard.png",
+    "sizeKb": "147",
+    "projectFile": "/Volumes/Mac SSD - Data/Gitter/CCC/Project/Sohel Vai/Nepal Trekking Tours/public/snapshots/verification/24-admin-dashboard.png",
+    "artifactFile": "/Users/RAIHAN/.gemini/antigravity/brain/836c5ffc-6b9f-492d-949f-8e5dedcde0fb/snapshots/verification/24-admin-dashboard.png"
+  }
+]
